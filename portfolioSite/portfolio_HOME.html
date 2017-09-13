@@ -1,0 +1,154 @@
+<!-- 
+got inspiration from 
+http://www.anthonygoodisondesign.com 
+ -->
+
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta charset="utf-8">
+			<title>Xiaotong Chen</title>
+			<link rel="stylesheet" type="text/css" href="./style1.css" id="css">
+		</head>
+		<body>
+			
+			<nav class="left">
+				<div><a class="menu">menu</a></div>
+				<div class="links">
+				<a href="#linkabout">About</a>
+  				<a href="#linkeducation">Education</a>
+  				<a href="#linkproject">Project</a>
+  				<a href="#linkcontact">Contact</a>
+  				</div>
+			</nav>
+			
+			<nav class="right">
+				<a href="#linktop" >
+					<img src="./picbacktotop.png" alt="picbacktotop" class="picbacktotop">
+				</a>
+			</nav>
+
+			<ul class="aside">
+     			<li class="aside__unit">
+         			<a class="aside__dot" href="#linktop"></a>
+     			</li>
+     			<li class="aside__unit">
+         			<a class="aside__dot" href="#linkabout"></a>
+     			</li>
+     			<li class="aside__unit">
+         			<a class="aside__dot" href="#linkeducation"></a>
+     			</li>
+     			<li class="aside__unit">
+         			<a class="aside__dot" href="#linkproject"></a>
+     			</li>
+     			<li class="aside__unit">
+         			<a class="aside__dot" href="#linkcontact"></a>
+     			</li>
+ 			</ul>
+
+			<a id="linktop"></a>
+			<div class="welcomepage">
+				<h1>Xiaotong's portfolio site</h1>
+			</div>
+
+			<a id="linkabout"></a>
+			<div class="aboutpage">
+				<h1>I am Xiaotong Chen, a student pursuing a MS degree in Information Systems major at Northeastern University - Seattle</h1>
+				<a class="findPic"  href="./myPic.html"  onclick="findPic()">you find my picture here!</a>
+
+			</div>
+
+			<a id="linkeducation"></a>
+			<div id = "backtoeducation" class="educationpage">
+				<div class="outer">
+					<div class="inner"></div>
+					<div class="inner"></div>
+					<div class="inner"><p><strong>EDUCATION</strong></p><a href="./portfolio_education.html">more</a></div>
+					<div class="inner"></div>
+				</div>
+
+				<div class="outer">
+					<div class="inner"></div>
+					<div class="inner"><p id="edu1">1.Master of Science</p><p id="edu1_1">2016-present Northeastern University - Seattle</p></div>
+					<div class="inner"></div>
+					<div class="inner"></div>
+				</div>
+
+				<div class="outer">
+					<div class="inner"></div>
+					<div class="inner"></div>
+					<div class="inner"><p id="edu2">2.Bachelor of Engineering
+					</p><p id="edu2_2">2011-2015 Zhejiang Univ of Sci & Tech, China</p></div>
+					<div class="inner"></div>
+				</div>
+
+				<div class="outer">
+					<div class="inner"></div>
+					<div class="inner"><p id="edu3">3.Summer School</p><p id="edu3_3">2014 Univ of Cal, Los Angeles</p></div>
+					<div class="inner"></div>
+					<div class="inner"></div>
+				</div>
+			</div>
+
+			<a id="linkproject"></a>
+			<div id = "backtoproject" class="projectpage">
+				<div class="outer">
+					<div class="inner"></div>
+					<div class="inner"></div>
+					<div class="inner"><p><strong>PROJECT</strong></p><a href="./portfolio_project.html">more</a></div>
+					<div class="inner"></div>
+				</div>
+
+				<div class="outer">
+					<div class="inner"></div>
+					<div class="inner"><p id="pro1">1.Project using HTML, CSS and JavaScript, 3/2017-4/2017</p><p id="pro1_1">Pet Service Website, Northeastern University</p></div>
+					<div class="inner"></div>
+					<div class="inner"></div>
+				</div>
+
+				<div class="outer">
+					<div class="inner"></div>
+					<div class="inner"></div>
+					<div class="inner"><p id="pro2">2.Project using Java, 11/2016-12/2016</p><p id="pro2_2">Vehicle Search and Management System, Northeastern University</p></div>
+					<div class="inner"></div>
+				</div>
+
+				<div class="outer">
+					<div class="inner"></div>
+					<div class="inner"><p id="pro3">3.Project using SQL and SQL Server, 11/2016-12/2016</p><p id="pro3_3">Beverage Rescue Database for Microsoft, Northeastern University</p></div>
+					<div class="inner"></div>
+					<div class="inner"></div>
+				</div>
+			</div>
+
+			<a id="linkcontact"></a>
+			<div id="backtocontact" class="contactpage">
+				<h1>
+				<a href="Mailto:mrchenxt@foxmail.com?">chen.xiaot@husky.neu.edu</a>
+				</h1>
+				<!-- <a href="./portfolio_contact.html" class="more">more</a> -->
+			</div>
+
+
+			<div class="change">
+				<button onclick="changeStyle()">change style</button>
+			</div>
+
+			<footer>
+				<a class="footerleft">Copyright 2017 XIAOTONG CHEN
+				</a>
+				<a href="./portfolio_terms.html" class="footerleft">Terms</a>
+				<a href="Mailto:mrchenxt@foxmail.com?" class="footerright">
+					<img src="./picmail.png" alt="picmail" class="picmail">
+				</a>
+				<a href="https://www.linkedin.com/in/xiaotong-chen-carlton/" class="footerright">
+					<img src="./piclinkedin.png" alt="piclinkedin" class="piclinkedin">
+				</a>
+
+			</footer>
+
+		</body>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="./portfolio.js"></script>
+	</html>

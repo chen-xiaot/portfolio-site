@@ -1,0 +1,516 @@
+/* 
+got inspiration from 
+http://www.anthonygoodisondesign.com 
+*/
+
+html{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+}
+body{
+	margin: 0;
+}
+
+
+.left{
+	top: 10px;
+	left: 10px;
+	position: fixed;
+	max-width: 70vw;
+
+
+}
+
+.left a {
+	
+	color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	/*text-decoration: underline;*/ 
+}
+
+
+.links{
+	display: none;
+}
+
+
+
+.picbacktotop{
+	height:auto;
+	width:50px;
+}
+
+.right{
+	position: fixed;
+	max-width: 25vw;
+	top: 30px;
+	right: 20px;
+}
+
+.right a{
+	float: right;
+}
+
+/*.aside{
+	position: fixed;
+	max-width: 25vw;
+	top: 30vh;
+	right: 10px;
+	font-size: 3vh;
+}*/
+
+
+.aside {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1.5vw;
+    list-style: none;
+    overflow: visible;
+}
+ 
+.aside__unit:not(:last-child) {
+    margin-bottom: 20px;
+}
+ 
+.aside__dot {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+}
+ 
+.aside__dot.larger,
+.aside__dot:hover {
+    transform: scale(1.5);
+}
+ 
+
+
+/* Welcome page */
+
+.welcomepage h1{
+	margin:0;
+	text-align: center;
+	height: 20%;
+	width: 30%;
+	font-size: 5vw;
+	color: white;
+	top:40%;
+    position: relative;
+    -webkit-animation: mymove 15s infinite;
+    animation: mymove 15s infinite;
+}
+
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 50%;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 50%;}
+}
+
+
+.welcomepage{
+	width: 100vw;
+	height: 100vh;
+
+	background-image:url("picwelcome.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+}
+
+
+
+
+/* About page */
+
+.aboutpage{
+
+	width: 100vw;
+	height: 100vh;
+	background-color:#ff6666;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.aboutpage h1{
+	margin-top: 0;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	font-size: 1.8em;
+	letter-spacing: 1px;
+}
+
+
+.findPic{
+	color: #ff6666;
+}
+
+
+/* Education page */
+.educationpage{
+
+	width: 100vw;
+	height: 100vh;
+	background-color:#ffcc66;
+	text-align: left;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+
+.educationpage .outer{
+	height: 100vh;
+	width: 20%;
+
+	display: -webkit-flex;
+	text-align: center;
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-start;
+}
+
+.educationpage .inner{
+	height: 25%;
+	width: 100%;
+
+	display: -webkit-flex;
+	text-align: center;
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+}
+
+.educationpage p{
+	font-size: 3vmin;
+}
+
+.education2{
+	background-color: lightgray;
+}
+
+.education2 h2{
+	text-align: center;
+	margin: 50px;
+}
+
+.education2 table{
+	max-width: 90vw;
+	margin: 0 auto;
+	letter-spacing: 1px;
+}
+
+.education2 tr td{
+	padding: 5px 8px;
+}
+
+/*.education2 ol{
+	padding-left: 30vw;
+	padding-right: 30vw;
+	letter-spacing: 2px;
+}
+*/
+.education2 .list{
+	width: 85vmin;
+	height: auto;
+	margin: 0 auto;
+	letter-spacing: 1px;
+}
+
+
+
+.picneu, .piczust, .picucla{
+	width: 50px;
+	height: auto;
+}
+
+
+#edu1_1, #edu2_2, #edu3_3{
+	display: none;
+}
+
+
+/* Project page */
+.projectpage{
+
+	width: 100vw;
+	height: 100vh;
+	background-color:#98b2e6;
+	text-align: left;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+
+.projectpage p{
+	font-size: 3vmin;
+}
+
+.projectpage .outer{
+	height: 100vh;
+	width: 20%;
+
+	display: -webkit-flex;
+	text-align: center;
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-start;
+}
+
+.projectpage .inner{
+	height: 25%;
+	width: 100%;
+
+	display: -webkit-flex;
+	text-align: center;
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+
+}
+
+.project2{
+	background-color: lightblue;
+}
+
+.project2 h2{
+	font-size: 23px;
+	margin: 50px;
+	text-align: center;
+}
+
+.project2 ul{
+	padding-left: 15vw;
+	padding-right: 15vw;
+	letter-spacing: 2px;
+}
+
+
+#pro1_1, #pro2_2, #pro3_3{
+	display: none;
+}
+
+
+/* Contact page */
+.contactpage{
+
+	width: 100vw;
+	height: 100vh;
+	background-color: lightgray;
+	display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.contactpage h1{
+	text-align: center;
+	margin-top: 0;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	font-size: 2em;
+	letter-spacing: 1px;
+	position: relative;
+}
+
+.more{
+	text-align: right;
+	margin-top: 20px;
+	position: relative;
+	right: 10vw;
+}
+
+.contact2{
+	font-size: 18px;
+	background-color:lightgray;
+}
+
+.contact2 h2{
+	margin: 50px;
+	text-align: center;
+}
+
+/*.contact2 ul{
+	padding-left: 20vw;
+	padding-right: 20vw;
+	letter-spacing: 2px;
+}*/
+.contact2 .list{
+	width: 65vmin;
+	margin: 0 auto;
+	letter-spacing: 1px;
+	list-style:none;
+}
+
+.contact2 .list ul{
+	list-style:none;
+}
+
+/*
+.form{
+	max-width: 90vw;
+	margin: 0 auto;
+	letter-spacing: 1px;
+	border:1px solid white;
+}
+
+.form td{
+	padding: 5px;
+}*/
+
+#form{
+	width: 60vmin;
+	margin: 0 auto;
+    padding: 20px;
+}
+
+#form input[type=text],input[type=submit],textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#form input[type=submit]{
+	width: 100%;
+    box-sizing: border-box;
+    font-size: 3vmin;
+    background-color: lightgray;
+}
+
+#form input[type=reset]{
+    box-sizing: border-box;
+    font-size: 1vmin;
+    background-color: lightgray;
+}
+
+
+.formhead{
+	text-align: center;
+	margin-top: 35px;
+}
+
+/* footer bar*/
+footer{
+	position: fixed;
+	bottom: 5px;
+	left: 20px;
+	right: 20px;
+	background: black;
+}
+
+footer a{
+	color: white;
+	font-size:15px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-top:6px;
+	margin-bottom: 3px;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+.footerleft{
+	float: left;
+}
+
+.footerright{
+	float: right;
+}
+
+.piclinkedin, .picmail{
+	height: 15px;
+	width: 15px;
+}
+
+.terms{
+	background-color: lightpink;
+}
+.terms h2{
+	text-align: center;
+	margin: 50px;
+}
+
+.terms p{
+	margin: 20px 40px;
+}
+.terms ol{
+	padding-left: 10vw;
+	padding-right: 10vw;
+	letter-spacing: 2px;
+
+}
+
+.change{
+	position: fixed;
+	width: 10vw;
+	height:auto;
+	bottom: 40px;
+	left: 20px;
+	right: 20px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+button:hover {
+    background-color: #555555;
+    color: white;
+}
+
+@media screen and (max-width: 480px) , (max-height: 480px){
+
+    html{
+    	font-size: 1em;
+    }
+
+    .welcomepage{
+	width: 100vw;
+	height: 100vh;
+
+	background-image:url("picwelcome2.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+	}
+    .aboutpage h1, .contactpage h1{
+    	font-size: 1.2em;
+    }
+
+
+    footer a , .education2, 
+    .project2 h2, .project2 ul, .contact2{
+    	font-size: 12px;
+    }
+
+    .picbacktotop{
+	height:auto;
+	width:30px;
+	}
+	.piclinkedin, .picmail{
+	height: auto;
+	width: 10px;
+	}
+	.educationpage p, .projectpage p{
+		font-size: 10px;
+	}
+
+
+}
